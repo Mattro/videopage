@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="theme-color" content="#ffcc00">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<title>Video</title>
@@ -10,7 +11,9 @@
 	<link rel="shortcut icon" href="/icon.svg">
 	
 	<style>
-		body { background: #151515; padding: 32px; max-width: 1984px; }
+		:root { --color-accent: #ffcc00; --color-background: #151515; }
+		body { background: var(--color-background); padding: 32px; max-width: 1984px; }
+		a,a:visited { color: var(--color-accent); }
 	</style>
 </head>
 	<body>
@@ -21,6 +24,8 @@
 							The #t=0.1 acts to generate a poster frame -->
 					<source src="clouds.mp4#t=0.1" type="video/mp4">
 				</video>
+				
+				<a href="https://github.com/Mattro/videopage">Source here</a>
 			</div>
 		</div>
 	</body>
